@@ -22,7 +22,7 @@ Options -> Text -> Locale(zh_CN) -> Character set(UTF-8)
 
 # 二、git status 显示文件被修改单实际并未修改
 
-[文件没有更改，但 git status 显示 modified\_本地没修改 但 git 提交时显示-CSDN 博客](https://blog.csdn.net/Lekaor/article/details/132804005)
+[文件没有更改，但 git status 显示 modified-CSDN 博客](https://blog.csdn.net/Lekaor/article/details/132804005)
 [多平台同步：Windows 与 Mac/Linux 中 GIT 管理冲突问题](https://zhuanlan.zhihu.com/p/5847530280?utm_psn=1838573586689961984)
 
 - 使用 git 管理文件时发现对比修改前和修改后的文件实际并没有改动的地方，但使用 git status 命令显示文件已被修改(==Windows 和 Linux 不同系统换行符导致的问题==)
