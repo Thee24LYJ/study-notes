@@ -1,4 +1,6 @@
-> 参考：[interview](https://interview.huihut.com/#/)
+> 参考：
+> [GitHub - huihut/interview: 📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。This repository is a summary of the basic knowledge of recruiting job seekers and beginners in the direction of C/C++ technology, including language, program library, data structure, algorithm, system, network, link loading library, interview experience, recruitment, recommendation, etc.](https://github.com/huihut/interview)
+>
 > 声明：学习笔记，强化不熟悉的知识点
 
 # 一、const 的指针与引用
@@ -62,8 +64,8 @@
 # 五、inline 内联函数
 
 - 在调用内联函数的地方进行函数体的替换(函数代码展开)，有点像宏定义的替换，但比宏定义多了类型检查
-- 优点：无需执行函数调用的流程，即压栈(保存当前函数地址，去执行对应调用函数)-出栈等操作(回到执行调用函数前的函数地址)，提高程序运行速度(内联函数在编译时会将函数体直接嵌入到每个调用点，‌减少函数调用的开销)
-- 缺点：增加代码体积，滥用可能导致性能下降，对于较大函数，‌内联可能增加编译时间并降低程序性能‌
+- 优点：无需执行函数调用的流程，即压栈(保存当前函数地址，去执行对应调用函数)-出栈等操作(回到执行调用函数前的函数地址)，提高程序运行速度(内联函数在编译时会将函数体直接嵌入到每个调用点，‌ 减少函数调用的开销)
+- 缺点：增加代码体积，滥用可能导致性能下降，对于较大函数，‌ 内联可能增加编译时间并降低程序性能 ‌
 - 对于包含循环、递归、switch 等复杂操作的函数，编译器一般不进行内联
 - 类声明中定义的函数，一般会**自动隐式的当做内联函数**(虚函数除外，但虚函数可以是内联函数-->编译器知道所调用类属于哪个类时才可以内联，只是当虚函数具有多态性时不能内联-->即使用对象指针或引用进行调用)
 - 内联函数只是对编译器的建议，最终是否进行函数内联决定权在于编译器

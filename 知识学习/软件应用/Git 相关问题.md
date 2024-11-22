@@ -32,3 +32,18 @@ Options -> Text -> Locale(zh_CN) -> Character set(UTF-8)
 ##### 方法 1：若是因为文件权限导致的则可使用`git config core.filemode false`关闭文件权限检测功能
 
 ##### 方法 2：若是因为 Windows 和 Linux 平台的换行符 LF/CRLF 导致的则使用`git config core.autocrlf false`
+
+# 三、git 关联多个远程仓库
+
+[git 实现本地仓库同时关联多个远程仓库（Gitee 和 GitHub）\_一个本地仓库可以关联两个远程仓库吗-CSDN 博客](https://blog.csdn.net/xiecheng1995/article/details/106570059)
+[【GitHub、Gitee】同时配置 SSH Keys 详细教程\_github 和 gittee 同时绑定密钥-CSDN 博客](https://blog.csdn.net/qq_44723773/article/details/121892147)
+
+```
+# 关联多个远程
+$ git remote add GitHub git@github.com:Thee24LYJ/LearningCode.git
+$ git remote add Gitee git@gitee.com:lyj_thee/learning-code.git
+
+# 远程推送
+$ git push GitHub main
+$ git push Gitee main
+```

@@ -1,4 +1,5 @@
 [Hello 系列 | Shell 编程必备简明基础知识](https://mp.weixin.qq.com/s?__biz=Mzg5ODYzNDU4Nw==&mid=2247484642&idx=1&sn=51579feb6febf3d9cb8c0379da17f703&chksm=c05ec2d6f7294bc0dd3cc5354d2702c07b8405dee54b4428425cc5b53f5630c53820cfb16282&token=835109125&lang=zh_CN&scene=21#wechat_redirect)
+[Shell 工具和脚本](https://missing-semester-cn.github.io/2020/shell-tools/)
 
 # 一、hello shell
 
@@ -36,6 +37,22 @@ echo "array[3]=${array[@]}"
 # 获取数组长度
 echo "array len=${#array[@]}"# 方式一
 echo "array len=${#array2[*]}"# 方式二
+
+# shell花括号{}
+convert image.{png,jpg}
+# 会展开为
+convert image.png image.jpg
+
+cp /path/to/project/{foo,bar,baz}.sh /newpath
+# 会展开为
+cp /path/to/project/foo.sh /path/to/project/bar.sh /path/to/project/baz.sh /newpath
+
+# 也可以结合通配使用
+mv *{.py,.sh} folder
+# 会移动所有 *.py 和 *.sh 文件
+
+# 创建 foo/a, foo/b, ... foo/h, bar/a, bar/b, ... bar/h 这些文件
+touch {foo,bar}/{a..h}
 ```
 
 - **`#!`**  是一个约定标记，指定这个脚本使用哪个 shell 解释器执行。这里指明使用 bash 解释器，这也是最常用的 shell 解释器
@@ -245,6 +262,15 @@ add()
 add 2 3
 echo "sum=$?"
 ```
+
+- `$0` - 脚本名
+- `$1`  到  `$9` - 脚本的参数。 `$1`  是第一个参数，依此类推。
+- `$@` - 所有参数
+- `$#` - 参数个数
+- `$?` - 前一个命令的返回值
+- `$$` - 当前脚本的进程识别码
+- `!!` - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用  `sudo !!`  再尝试一次
+- `$_` - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下  `Esc`  之后键入 . 来获取这个值
 
 # 六、文件判断
 
