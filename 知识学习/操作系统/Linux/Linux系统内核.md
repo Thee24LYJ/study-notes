@@ -5,7 +5,8 @@
 - [内核与用户层通信之四种方法](https://blog.csdn.net/vertor11/article/details/79622694)
 - [linux 内核剖析（六）Linux 系统调用详解（实现机制分析）](https://www.cnblogs.com/alantu2018/p/8991310.html)
 - [用户态和内核态的区别 - Gizing - 博客园](https://www.cnblogs.com/gizing/p/10925286.html)
-- [什么是系统调用机制？结合Linux0.12源码图解](https://mp.weixin.qq.com/s/GtBjfwbWr9gXc-fgxg7f5w)
+- [什么是系统调用机制？结合 Linux0.12 源码图解](https://mp.weixin.qq.com/s/GtBjfwbWr9gXc-fgxg7f5w)
+- [Linux 内核第一版（V0.01) 才 8670 行代码，这不准备读一波源码？](https://mp.weixin.qq.com/s/NSskN2Up8O0DBxjSECKd5A)
 
 # 一、Linux 内核
 

@@ -1,5 +1,7 @@
 > git 提交代码时需要写 commit message(提交说明)，通过该提交说明来说明本次提交的目的
 
+[How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+
 # 1.提交说明作用
 
 - 提供更多历史信息，方便快速浏览

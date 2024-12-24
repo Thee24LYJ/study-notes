@@ -35,7 +35,7 @@ Options -> Text -> Locale(zh_CN) -> Character set(UTF-8)
 
 # 三、git 关联多个远程仓库
 
-[git 实现本地仓库同时关联多个远程仓库（Gitee 和 GitHub）\_一个本地仓库可以关联两个远程仓库吗-CSDN 博客](https://blog.csdn.net/xiecheng1995/article/details/106570059)
+[git 实现本地仓库同时关联多个远程仓库（Gitee 和 GitHub）-CSDN 博客](https://blog.csdn.net/xiecheng1995/article/details/106570059)
 [【GitHub、Gitee】同时配置 SSH Keys 详细教程\_github 和 gittee 同时绑定密钥-CSDN 博客](https://blog.csdn.net/qq_44723773/article/details/121892147)
 
 ```
@@ -47,3 +47,14 @@ $ git remote add Gitee git@gitee.com:lyj_thee/learning-code.git
 $ git push GitHub main
 $ git push Gitee main
 ```
+
+# 四、git pull 报错
+
+[解决 git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Pleas-CSDN 博客](https://blog.csdn.net/W_317/article/details/106518894?fromshare=blogdetail&sharetype=blogdetail&sharerId=106518894&sharerefer=PC&sharesource=qq_45237293&sharefrom=from_link)
+
+> git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.
+>
+> Please make sure you have the correct access rights  
+> and the repository exists.
+
+解决办法：在本地电脑和 github 网站上重新配置 SSH Key

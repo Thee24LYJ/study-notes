@@ -15,3 +15,9 @@ $ certutil -hashfile  test.txt sha256
 资源监视器 -> CPU 选项卡 -> 关联的句柄(输入文件名进行搜索)
 
 [windows 查看文件被哪个进程占用](https://zhuanlan.zhihu.com/p/158119424)
+
+# Windows 包管理器
+
+[Windows 系统缺失的包管理器：Chocolatey、WinGet 和  Scoop - 少数派](https://sspai.com/post/65933)
+
+[Windows 下包管理器 Scoop 的安装与使用 - Muxiner's Blog](https://muxiner.github.io/using-scoop/)

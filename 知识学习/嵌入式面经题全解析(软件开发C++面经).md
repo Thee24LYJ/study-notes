@@ -9,6 +9,7 @@
 [进程与线程](操作系统/进程与线程.md)
 [进程与线程的一个简单解释 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
 [Linux 教程 | 爱编程的大丙](https://subingwen.cn/linux/#%E7%AC%AC3%E7%AB%A0-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B)
+[C++线程知识点汇总](https://mp.weixin.qq.com/s/t_QB4I0zRhmVymEbDlMBvA)
 
 ### 1.1 基本概念
 

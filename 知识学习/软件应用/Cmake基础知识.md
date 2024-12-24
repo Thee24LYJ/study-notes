@@ -1,4 +1,5 @@
 [cmake 简明基础知识汇总！](https://mp.weixin.qq.com/s/XxBX242Jnq8jFmqw3E8oMw)
+[看完这篇文章，我终于搞懂了CMake，真香！(基础篇)](https://mp.weixin.qq.com/s/oBxPqAGTpPYoU2YEpoP_zA)
 
 # 一、Cmake 语法知识点
 

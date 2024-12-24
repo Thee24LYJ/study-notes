@@ -48,3 +48,5 @@ nnoremap <Tab> ><CR>
 [【报错记录】this ide build has expired. provide another build or select 'jetbrains installer'](https://zhuanlan.zhihu.com/p/641334622)
 
 建议重新安装其他版本的 IDE 并用该 IDE 打开
+
+[Pycharm配置conda环境(解决新版本无法识别可执行文件问题)\_conda可执行文件-CSDN博客](https://blog.csdn.net/2401_84495872/article/details/139919853)

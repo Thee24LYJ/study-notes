@@ -1,4 +1,6 @@
 [Git 基础 - git tag 一文真正的搞懂 git 标签的使用-CSDN 博客](https://blog.csdn.net/qq_39505245/article/details/124705850)
+[Pro Git 中文版](https://git-scm.com/book/zh/v2)
+[版本控制(Git)](https://missing-semester-cn.github.io/2020/version-control/)
 
 # 一、git tag
 

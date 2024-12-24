@@ -1,4 +1,5 @@
 [【AI 绘画】一张图看懂新手入门文生图如何使用 - 哔哩哔哩](https://www.bilibili.com/read/cv22661198/)
+[【AI 绘画】从零开始的 AI 绘画入门教程——魔法导论【持续更新】 - 哔哩哔哩](https://www.bilibili.com/opus/768529619802390537?from=articleDetail&spm_id_from=333.976.0.0)
 
 - 正面 Tag（想要的内容）是这些，改善画质用的 Tag：
 

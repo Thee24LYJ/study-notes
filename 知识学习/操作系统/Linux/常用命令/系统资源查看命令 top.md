@@ -1,15 +1,17 @@
 - 任务区域列表
 
-![1709358768744](C:\Users\Administrator\Documents\typora-images\1709358768744.png)
+![](https://s2.loli.net/2024/12/23/FdC6hTsENwjk3ro.png)
+
+
 
 - 命令选型
 
-![1709975391620](C:\Users\Administrator\Documents\typora-images\1709975391620.png)
+![](https://s2.loli.net/2024/12/23/HlBXcYdRNGy4nit.png)
 
-![1709974984779](C:\Users\Administrator\Documents\typora-images\1709974984779.png)
+![](https://s2.loli.net/2024/12/23/gTbEzaZ4SLGPKBU.png)
 
-![1709974284779](C:\Users\Administrator\Documents\typora-images\1709974284779.png)
+![](https://s2.loli.net/2024/12/23/MIiTKDA85cZ1sb3.png)
 
-![1709464579284](C:\Users\Administrator\Documents\typora-images\1709464579284.png)
+![](https://s2.loli.net/2024/12/23/hNxFHVBMUli2ptY.png)
 
-![1709442478763](C:\Users\Administrator\Documents\typora-images\1709442478763.png)
+![](https://s2.loli.net/2024/12/23/zC3Wp4dgr8swa2U.png)

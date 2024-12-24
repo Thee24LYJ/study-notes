@@ -1,0 +1,1 @@
+- 一个离线 AI 视频字幕生成和翻译软件，您可以使用本程序将日语音视频文件/字幕文件转换为中文字幕文件：[GalTransl-for-ASMR](https://github.com/shinnpuru/GalTransl-for-ASMR)
