@@ -21,3 +21,11 @@ $ certutil -hashfile  test.txt sha256
 [Windows 系统缺失的包管理器：Chocolatey、WinGet 和  Scoop - 少数派](https://sspai.com/post/65933)
 
 [Windows 下包管理器 Scoop 的安装与使用 - Muxiner's Blog](https://muxiner.github.io/using-scoop/)
+
+# Windows 弹出移动硬盘提示“该设备正在使用中”
+
+解决办法：
+
+通过`事件查看器->自定义视图->管理事件`找到占用的进程，然后结束掉该进程
+
+[弹出 USB 大容量存储设备时出问题“该设备正在使用中”](https://zhuanlan.zhihu.com/p/424874015)

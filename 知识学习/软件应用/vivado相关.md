@@ -3,7 +3,7 @@
 vivado 工程结构：
 
 - project_name.cache：Vivado 软件的运行缓存
-- project_name.hw： 所有波形文件
+- project_name.hw： 所有 debug 波形文件
 - project_name.ip_user_files：用户关于 IP 的文件
 - project_name.runs：编译与综合结果 ，impl_1 文件夹存取布线后结果
 - project_name.sdk：SDK 环境代码，一般是 ZYNQ 设计中关于 PS 端的代码

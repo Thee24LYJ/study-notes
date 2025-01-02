@@ -1,20 +1,6 @@
-[CUDA 学习（一）——如何查看自己 CUDA 版本？\_cuda version-CSDN 博客](https://blog.csdn.net/bruce_zhao1407/article/details/109580835)
+# CUDA 编程
 
-[nvcc -V 和 nvidia-smi 出现的 cuda 版本不同-CSDN 博客](https://blog.csdn.net/weixin_39518984/article/details/111406728)
-
-pytorch 安装(CUDA 版本)
-[Get Started](https://pytorch.org/get-started/locally/)
-
-验证 pytorch 是否支持 CUDA：
-
-```python
-import torch
-print(torch.cuda.is_available())
-```
-
-# CUDA 学习
-
-### CUDA 环境搭建(WSL2)
+### WSL 上的 CUDA 环境搭建(WSL2)
 
 WSL2 上 GPU 的 CUDA 环境下载安装
 [CUDA Toolkit 12.6 Update 2 Downloads | NVIDIA Developer](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_network)
@@ -25,6 +11,27 @@ C++语法编译报错：
 address of a host variable "std::cout" cannot be directly taken in a device function
 
 原因：不能使用 C++的 iostream 库的 cout 实现输出，只能使用 stdio.h 库的 printf 实现输出
+
+### Windows 安装支持 GPU 的 pytorch
+
+[CUDA 学习（一）——如何查看自己 CUDA 版本？\_cuda version-CSDN 博客](https://blog.csdn.net/bruce_zhao1407/article/details/109580835)
+[nvcc -V 和 nvidia-smi 出现的 cuda 版本不同-CSDN 博客](https://blog.csdn.net/weixin_39518984/article/details/111406728)
+
+pytorch 安装(CUDA 版本)：[Get Started](https://pytorch.org/get-started/locally/)
+
+验证 pytorch 是否支持 CUDA：
+
+```python
+import torch
+print(torch.cuda.is_available())
+```
+
+# CUDA 学习
+
+### CUDA 基础
+
+[CUDA 编程之快速入门 - 最难不过二叉树 - 博客园](https://www.cnblogs.com/skyfsm/p/9673960.html)
+[CUDA 编程入门极简教程](https://zhuanlan.zhihu.com/p/34587739)
 
 ### WSL2 上使用 CUDA 遇到的问题
 
@@ -47,4 +54,3 @@ Refer https://developer.nvidia.com/tools-overview for more details
 
 [NVIDIA Development Tools Solutions - ERR_NVGPUCTRPERM: Permission issue with Performance Counters | NVIDIA Developer](https://developer.nvidia.com/nvidia-development-tools-solutions-err_nvgpuctrperm-permission-issue-performance-counters)
 [在 WSL 上使用 Nsight System 和 Nsight Compute 常见问题与解决方案](https://zhuanlan.zhihu.com/p/644905434)
-
