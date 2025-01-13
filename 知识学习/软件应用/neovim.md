@@ -13,3 +13,7 @@
 ### 配置 lazyvim
 
 [🛠️ Installation \| LazyVim](https://www.lazyvim.org/installation)
+
+---
+
+Shift+h 显示/隐藏 隐藏文件

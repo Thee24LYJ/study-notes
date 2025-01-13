@@ -41,3 +41,7 @@ $ git tag -d <标签名>
 
 - `git reset`：恢复之前某个提交的版本且该版本之后的提交都不需要时使用
 - `git revert`：恢复之前某个提交的版本且该版本之后的提交仍需要时使用
+
+# 三、git 创建.gitignore 文件
+
+[Git 如何创建.gitignore 文件\|极客教程](https://geek-docs.com/git/git-questions/159_git_how_to_create_a_gitignore_file.html)

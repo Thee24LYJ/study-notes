@@ -29,3 +29,9 @@ $ certutil -hashfile  test.txt sha256
 通过`事件查看器->自定义视图->管理事件`找到占用的进程，然后结束掉该进程
 
 [弹出 USB 大容量存储设备时出问题“该设备正在使用中”](https://zhuanlan.zhihu.com/p/424874015)
+
+# 路由追踪
+
+```cmd
+> tracert 8.8.8.8
+```
