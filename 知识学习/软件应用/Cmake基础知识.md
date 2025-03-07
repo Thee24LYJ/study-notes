@@ -2,6 +2,8 @@
 [cmake 简明基础知识汇总！](https://mp.weixin.qq.com/s/XxBX242Jnq8jFmqw3E8oMw)
 [看完这篇文章，我终于搞懂了 CMake，真香！(基础篇)](https://mp.weixin.qq.com/s/oBxPqAGTpPYoU2YEpoP_zA)
 [看完这篇文章，我终于搞懂了 CMake，真香！(提升篇)](https://mp.weixin.qq.com/s/5L5_GMNXDlOLjvddFwzYwA)
+[看完这篇文章，我终于搞懂了 CMake，真香！(高级篇)](https://mp.weixin.qq.com/s/rW-fqaVvr62lwSExLYR3qQ)
+[CMake 进阶实战！](https://mp.weixin.qq.com/s/GGZZfW54LiCJbEfy6EAE6g)
 
 # 一、Cmake 语法知识点
 

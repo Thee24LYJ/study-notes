@@ -31,13 +31,13 @@ username  ALL=(ALL:ALL) ALL
 
 解决办法：
 
-- 添加`-o utf8=1`参数(推荐)
+- 添加`-o utf8=1`参数(**推荐**)
 
 ```
 $ sudo mount -o utf8=1  /dev/sdb1 /mnt/test
 ```
 
-- 添加`-o iocharset=utf8`参数
+- 添加`-o iocharset=utf8`参数(**不推荐**)
 
 ```
 $ sudo mount -o iocharset=utf8  /dev/sdb1 /mnt/test

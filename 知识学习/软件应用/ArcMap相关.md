@@ -1,5 +1,4 @@
 [arcpy python error: no module named \_base，为 jupyter 添加 python2-CSDN 博客](https://blog.csdn.net/msj0210/article/details/119219327)
-
 [Python 导入 Arcpy 报错 No module named arcpy 问题解决-CSDN 博客](https://blog.csdn.net/alun550/article/details/102745247)
 
 Python3 运行脚本报错：
@@ -10,3 +9,6 @@ ModuleNotFoundError: No module named '\_base'
 
 [格网 DEM 生成不规则三角网 TIN-CSDN 博客](https://blog.csdn.net/charlee44/article/details/116355227)
 [TIN 与 DEM 的知识介绍及格网 DEM 生成不规则三角网 TIN 方法-CSDN 博客](https://blog.csdn.net/m0_37251750/article/details/124881630)
+
+- 高程地图裁剪
+  [\[杂项小记\]利用 Global Mapper 裁剪指定大小 DEM 地图数据\_globalmapper 怎么裁剪 dem-CSDN 博客](https://blog.csdn.net/victorenemy/article/details/139299252)
