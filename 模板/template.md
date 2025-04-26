@@ -1,8 +1,9 @@
 ---
 title: 实际文件名，因为我的文件名可能会是数字串
-date: 建立日期
+date: {{date}}
+time: {{time}}
 tags:
-  - 标签1
+  - 笔记
 alias: 别名1
 category: 类别
 stars: 星级（可选，当为评测笔记的时候会存在）

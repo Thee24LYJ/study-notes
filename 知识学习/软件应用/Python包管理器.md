@@ -25,3 +25,8 @@ $ conda env list
 # 清除pip所有缓存，包括已下载但未安装的软件包和已安装但未被使用的缓存
 $ pip cache purge
 ```
+
+```bash
+# pip指定安装源 -i (临时更换安装源)
+$ pip install 包名 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```

@@ -81,3 +81,21 @@ vmware 虚拟机重启后，等待 Vmware 加载进度条加载完后，按 esc 
 
 [详解在 Ubuntu 中引导到救援模式或紧急模式](https://linux.cn/article-14709-1.html)
 [linux sudo 命令失败 提示 sudo：/usr/bin/sudo 必须属于用户 ID 0(的用户)并且设置 setuid 位](https://www.cnblogs.com/chxwkx/p/10686864.html)
+
+# Linux 添加/删除 PPA 源
+
+- 添加 PPA 源
+
+```bash
+$ sudo add-apt-repository ppa:PPA_Name/stable
+$ sudo apt update
+```
+
+- 删除 PPA 源
+
+```bash
+$ sudo add-apt-repository --remove ppa:PPA_Name/stable
+$ sudo apt update
+```
+
+[如何在 Ubuntu Linux 中移除或删除 PPA](https://cn.linux-console.net/?p=19570)

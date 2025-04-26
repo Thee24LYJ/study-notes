@@ -1,4 +1,5 @@
 [Window 平台 Git-Bash 的配置](https://lhajh.github.io/windows/git/2019/05/05/Window-platform-Git-Bash-configuration.html)
+
 # 一、Git Bash 编码问题
 
 [【问题记录】解决“命令行终端”和“Git Bash”操作本地 Git 仓库时出现 中文乱码 的问题！\_windows cmd git 乱码-CSDN 博客](https://blog.csdn.net/weixin_43729127/article/details/133185964)
@@ -59,3 +60,7 @@ $ git push Gitee main
 > and the repository exists.
 
 解决办法：在本地电脑和 github 网站上重新配置 SSH Key
+
+# 五、git 修改提交历史中的错误
+
+[git 版本管理-修改提交历史中的错误](git版本管理-修改提交历史中的错误.md)

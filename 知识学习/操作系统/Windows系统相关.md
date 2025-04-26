@@ -35,3 +35,9 @@ $ certutil -hashfile  test.txt sha256
 ```cmd
 > tracert 8.8.8.8
 ```
+
+# DNS 服务器 IP 地址配置
+
+网络连接->Internet 协议版本 4(TCP/IPv4)->DNS 服务器配置
+
+[阿里公共 DNS](https://www.alidns.com/knowledge?type=SETTING_DOCS#user_windows)
