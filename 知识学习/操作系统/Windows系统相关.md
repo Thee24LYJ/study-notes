@@ -41,3 +41,12 @@ $ certutil -hashfile  test.txt sha256
 网络连接->Internet 协议版本 4(TCP/IPv4)->DNS 服务器配置
 
 [阿里公共 DNS](https://www.alidns.com/knowledge?type=SETTING_DOCS#user_windows)
+
+# Windows 终端(cmd)的编码类型
+
+```cmd
+# 查看
+> chcp
+# 修改为utf-8
+> chcp 65001
+```

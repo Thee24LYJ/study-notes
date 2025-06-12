@@ -64,3 +64,18 @@ $ git push Gitee main
 # 五、git 修改提交历史中的错误
 
 [git 版本管理-修改提交历史中的错误](git版本管理-修改提交历史中的错误.md)
+
+# 六、git pull 报错
+
+> $ git pull origin main
+> From github.com:Thee24LYJ/oled-ui-astra
+>
+> - branch main -> FETCH_HEAD
+>   fatal: refusing to merge unrelated histories
+
+解决办法：强制允许合并无关历史
+使用 `--allow-unrelated-histories` 参数强制合并：
+
+```bash
+$ git pull origin main --allow-unrelated-histories
+```

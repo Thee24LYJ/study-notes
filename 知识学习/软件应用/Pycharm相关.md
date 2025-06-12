@@ -49,4 +49,4 @@ nnoremap <Tab> ><CR>
 
 建议重新安装其他版本的 IDE 并用该 IDE 打开
 
-[Pycharm配置conda环境(解决新版本无法识别可执行文件问题)\_conda可执行文件-CSDN博客](https://blog.csdn.net/2401_84495872/article/details/139919853)
+[Pycharm 配置 conda 环境(解决新版本无法识别可执行文件问题)\_conda 可执行文件-CSDN 博客](https://blog.csdn.net/2401_84495872/article/details/139919853)

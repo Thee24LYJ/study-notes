@@ -4,8 +4,9 @@
 [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
 [初识多线程并行计算 \| Notebook](https://cuda.keter.top/intro_parallel/#%E7%BA%BF%E7%A8%8B%E7%B4%A2%E5%BC%95)
 
-### CUDA环境搭建
-[CUDA相关](CUDA相关.md)
+### CUDA 环境搭建
+
+[CUDA 相关](CUDA相关.md)
 
 ![](https://s2.loli.net/2025/01/15/9JPxCIp4HdTkhAb.png)
 
