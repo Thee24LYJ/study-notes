@@ -5,4 +5,4 @@
 # IC 学习
 
 [Verilog 基础知识点](知识学习/芯片开发/Verilog&SystemVerilog/Verilog基础知识点.md)
-[SystemVerilog 学习](知识学习/芯片开发/Verilog&SystemVerilog/SystemVerilog学习.md)
+[SystemVerilog 学习](知识学习/芯片开发/Verilog&SystemVerilog/SystemVerilog学习汇总.md)

@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - file.path
+    sort:
+      - property: file.size
+        direction: ASC
+    columnSize:
+      file.name: 191
+  - type: cards
+    name: 视图

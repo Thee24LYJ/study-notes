@@ -132,10 +132,20 @@ Verillog 还支持指定 bit 位后固定位宽的向量域选择访问：
 
 以反引号\`开始的某些标识符
 
-```
+````
 // 宏定义
 `define DATA_DW 32
 `undef DATA_DW
+
+`define UVM_NAME UVM
+`define UVM_MAJOR_REV 1
+`define UVM_MINOR_REV 2
+
+// 这里的``和`"类似于\转义字符(相当于保持后面一个字符不被转义)
+// 1.`` (两个连续的反引号): 这是令牌连接(token concatenation) 符号。它的作用是将它左右两边的“令牌”（可以是文本、数字或其他宏的展开结果）无缝地拼接成一个新的令牌
+//2. `" (反引号加双引号): 这是一个特殊的字符串化 (stringification) 操作符。它会将其后面的所有内容（在宏展开后）转换成一个标准的 SystemVerilog 字符串字面量（即用""包围起来）
+// 该宏定义为`"UVM-1.2"`
+`define UVM_VERSION_STRING `"`UVM_NAME``-```UVM_MAJOR_REV``.```UVM_MINOR_REV```"
 
 // 条件编译
 `ifdef MCU
@@ -174,7 +184,7 @@ Verillog 还支持指定 bit 位后固定位宽的向量域选择访问：
 // 在模块实例化中，出现在这两个编译指令间的任何未连接的输入端口，为正偏电路状态或者为反偏电路状态
 `unconnected_drive
 `nounconnected_drive
-```
+````
 
 ### 1.5 Verilog 连续赋值
 
@@ -397,6 +407,8 @@ casex、 casez 语句是 case 语句的变形，用来表示条件选项中的�
 ### 2.7 Verilog 循环语句
 
 Verilog 循环语句分为 while，for，repeat，和 forever 循环，循环语句只能在 always 或 initial 块中使用，但可以包含延迟表达式
+
+[SystemVerilog -- 3.5 SystemVerilog repeat - 松—松 - 博客园](https://www.cnblogs.com/sys-123456/p/18173783)
 
 ##### 2.7.1 while 循环
 

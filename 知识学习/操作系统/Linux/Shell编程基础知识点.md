@@ -1,5 +1,6 @@
 [Hello 系列 | Shell 编程必备简明基础知识](https://mp.weixin.qq.com/s?__biz=Mzg5ODYzNDU4Nw==&mid=2247484642&idx=1&sn=51579feb6febf3d9cb8c0379da17f703&chksm=c05ec2d6f7294bc0dd3cc5354d2702c07b8405dee54b4428425cc5b53f5630c53820cfb16282&token=835109125&lang=zh_CN&scene=21#wechat_redirect)
 [Shell 工具和脚本](https://missing-semester-cn.github.io/2020/shell-tools/)
+[Linux Bash 常用技巧汇总](Linux%20Bash常用技巧汇总.md)
 
 # 一、hello shell
 
@@ -301,4 +302,42 @@ fi
 ```
 
 补充：
-使用`(...)`语法会创建一个子shell执行其中的语句，不会影响外面的shell脚本
+使用`(...)`语法会创建一个子 shell 执行其中的语句，不会影响外面的 shell 脚本
+
+# 七、其他
+
+### 命令自动扩展
+
+花括号中的每个字符都可以和之后（或之前）的字符串进行组合拼接，**注意花括号和其中的逗号不可以用空格分隔，否则会被认为是普通的字符串对待**
+
+```bash
+$ echo {1,2,3}file
+file1 file2 file3
+$ echo {txt,csv}{1,2,3}
+txt1 txt2 txt3 csv1 csv2 csv3
+$ echo {1,2,3}file
+1file 2file 3file
+$ echo /very/long/path/file{,.bak}
+/very/long/path/file /very/long/path/file.bak
+
+cp /very/long/path/file{,.bak}
+# 给 file 复制一个叫做 file.bak 的副本
+rm file{1,3,5}.txt
+# 删除 file1.txt file3.txt file5.txt
+mv *.{c,cpp} src/
+# 将当前目录所有 .c 和 .cpp 为后缀的文件移入 src 文件夹
+```
+
+### shell 脚本执行方式
+
+[Linux 中 source xxx.sh 和 ./xxx.sh 的区别](https://mp.weixin.qq.com/s/5PzO1ouvIozHjs84wku0lg)
+
+常见的两种方式：`source xx.sh`和`./xx.sh`，这两种执行 shell 脚本方式的区别如下(最主要的区别在于脚本是否在**当前 Shell 进程**中运行，以及其修改是否**影响当前 Shell 环境**)：
+
+|      特性对比      |                     `source xxx.sh`                     |                `./xxx.sh`                |
+| :----------------: | :-----------------------------------------------------: | :--------------------------------------: |
+|    **执行环境**    |                   **当前 Shell 进程**                   |          **新建子 Shell 进程**           |
+| **影响当前 Shell** |          **是**（变量、函数、环境更改会保留）           | **否**（脚本中的更改随子进程结束而消失） |
+|    **权限要求**    |                     只需**读**权限                      |     需要**可执行**权限 (`chmod +x`)      |
+|   **脚本解释器**   | 忽略 Shebang 行 (如  `#!/bin/bash`)，始终使用当前 Shell |       由脚本首行的 Shebang 行指定        |
+|    **典型用途**    |            加载配置、刷新环境变量、定义函数             |            运行独立脚本或程序            |

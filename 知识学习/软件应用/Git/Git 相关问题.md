@@ -52,6 +52,8 @@ $ git push Gitee main
 
 # 四、git pull 报错
 
+### 远程仓库无法访问
+
 [解决 git@github.com: Permission denied (publickey). fatal: Could not read from remote repository. Pleas-CSDN 博客](https://blog.csdn.net/W_317/article/details/106518894?fromshare=blogdetail&sharetype=blogdetail&sharerId=106518894&sharerefer=PC&sharesource=qq_45237293&sharefrom=from_link)
 
 > git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.
@@ -61,11 +63,7 @@ $ git push Gitee main
 
 解决办法：在本地电脑和 github 网站上重新配置 SSH Key
 
-# 五、git 修改提交历史中的错误
-
-[git 版本管理-修改提交历史中的错误](git版本管理-修改提交历史中的错误.md)
-
-# 六、git pull 报错
+### fatal: refusing to merge unrelated histories
 
 > $ git pull origin main
 > From github.com:Thee24LYJ/oled-ui-astra
@@ -79,3 +77,13 @@ $ git push Gitee main
 ```bash
 $ git pull origin main --allow-unrelated-histories
 ```
+
+# 五、git 修改提交历史中的错误
+
+[git 版本管理-修改提交历史中的错误](git版本管理-修改提交历史中的错误.md)
+
+# 六、fatal: detected dubious ownership in repository
+
+[git fatal: detected dubious ownership in repository 解决方法\_detected dubious ownership in repository at-CSDN 博客](https://blog.csdn.net/tcjy1000/article/details/127129224)
+
+这个错误出现原因是仓库的用户身份(Windows 上用户名可能没变但是 SID 改变了)发生了变化，可以修改该仓库目录的所有者，也可以使用命令`git config --global --add safe.directory D:/git/repo/dir`解决

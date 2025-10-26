@@ -5,7 +5,6 @@
 ### 12 单件模式
 
 > 注意构造函数和拷贝构造函数需要设为 private
-
 ![image-20230912102224891](C:\Users\Administrator\Documents\typora-images\image-20230912102224891.png)
 
 > 工厂模式绕开 new 解决 new 带来的紧耦合问题，单件模式保证只存在一个实例

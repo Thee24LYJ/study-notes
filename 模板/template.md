@@ -1,5 +1,5 @@
 ---
-title: 实际文件名，因为我的文件名可能会是数字串
+title: {{title}}
 date: {{date}}
 time: {{time}}
 tags:

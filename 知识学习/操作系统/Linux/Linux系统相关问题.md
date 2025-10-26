@@ -99,3 +99,14 @@ $ sudo apt update
 ```
 
 [如何在 Ubuntu Linux 中移除或删除 PPA](https://cn.linux-console.net/?p=19570)
+
+# Linux 删除 Windows 系统下创建文件在 Linux 系统打开多余的\^M 符号
+
+使用 dos2unix 工具将 Windows 平台的换行符转换为 Linux 平台的换行符
+
+```bash
+$ dos2unix filename # 直接覆盖原文件
+$ dos2unix -n winfile.txt linuxfile.txt # 保留原文件，输出新文件
+```
+
+[用户 b669 和腾讯元宝的对话](https://yuanbao.tencent.com/bot/app/share/chat/vTeaVseATF3H)

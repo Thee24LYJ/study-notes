@@ -1,5 +1,6 @@
 参考：
 [SystemVerilog 新手入门笔记 - 简书](https://www.jianshu.com/p/013c4066dd85)
+[SystemVerilog 教程第二章数据类型：字符串 - 知乎](https://zhuanlan.zhihu.com/p/615902987)
 
 ### 变量
 
@@ -407,6 +408,16 @@ fsmstate_e pstate,nstate;	//声明自定义类型变量
 > putc(M,C): 把字节 C 写到字符串的 M 位上，0$\le$M$\le$len-1
 >
 > substr(start,end): 提取位置 start 到 end 的所有字符
+
+|       用法        |                  定义                  |                                   注释                                   |
+| :---------------: | :------------------------------------: | :----------------------------------------------------------------------: |
+|     str.len()     |           function int len()           |                           返回字符串中的字符数                           |
+|    str.putc()     |  function void putc (int i, byte c);   |                  将字符串中的第 i 个字符替换为给定字符                   |
+|    str.getc()     |      function byte getc (int i);       |                   返回字符串中第 i 个字符的 ASCII 代码                   |
+|   str.tolower()   |       function string tolower();       |                    返回一个字符串，其中字符转换为小写                    |
+|  str.compare(s)   |    function int compare (string s);    |        将字符串与 s 进行比较，就像 ANSI C strcmp 函数中的比较一样        |
+|  str.icompare(s)  |   function int icompare (string s);    | 将字符串与 s 进行不区分大小写的比较，就像 ANSI C strcmp 函数中的比较一样 |
+| str.substr (i, j) | function string substr (int i, int j); |     返回新字符串，它是由位于字符串的位置 i 到 j 的字符构成的子字符串     |
 
 ```verilog
 string s;
